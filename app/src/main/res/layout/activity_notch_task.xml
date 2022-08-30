@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.tasks.NotchTaskActivity">
+
+    <include
+        android:id="@+id/includePanel"
+        layout="@layout/top_panel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/mainNotchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toTopOf="@id/calcNotchLayout"
+        app:layout_constraintTop_toBottomOf="@id/includePanel">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addSourceSystemBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Выбрать систему координат..." />
+
+        <LinearLayout
+            style="@style/block_text"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                android:id="@+id/firstPointText"
+                style="@style/child_block_text"
+                android:layout_marginEnd="2dp"
+                android:layout_weight="1"
+                android:background="#8F8F8F"
+                android:gravity="center"
+                android:text="Точка A" />
+
+            <TextView
+                android:id="@+id/firstPointInput"
+                style="@style/child_block_text"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:paddingStart="10sp"
+                android:paddingEnd="10sp"
+                android:text="Выбрать точку..."
+                android:textColorHint="#BFBFBF" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/block_text"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                android:id="@+id/secondPointText"
+                style="@style/child_block_text"
+                android:layout_marginEnd="2dp"
+                android:layout_weight="1"
+                android:background="#8F8F8F"
+                android:gravity="center"
+                android:text="Точка B" />
+
+            <TextView
+                android:id="@+id/secondPointInput"
+                style="@style/child_block_text"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:paddingStart="10sp"
+                android:paddingEnd="10sp"
+                android:text="Выбрать точку..."
+                android:textColorHint="#BFBFBF" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/block_text"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                android:id="@+id/aPosText"
+                android:layout_marginEnd="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Угол A (дес. град.)"
+                android:background="#8F8F8F"
+                style="@style/child_block_text"/>
+
+            <EditText
+                android:id="@+id/aAngleEdit2"
+                android:layout_marginEnd="2dp"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:background="#5E5E5E"
+                style="@style/child_block_text"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/block_text"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                android:id="@+id/bAngleText"
+                android:layout_marginEnd="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Угол B (дес. град.)"
+                android:background="#8F8F8F"
+                style="@style/child_block_text"/>
+
+            <EditText
+                android:id="@+id/bAngleEdit2"
+                android:layout_marginEnd="2dp"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:background="#5E5E5E"
+                style="@style/child_block_text"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sourcePointText"
+            android:layout_marginTop="5dp"
+            style="@style/info_text"
+            android:text="Результирующая точка" />
+
+        <LinearLayout style="@style/block_text"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                android:id="@+id/nText"
+                android:layout_marginEnd="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="N"
+                android:background="#8F8F8F"
+                style="@style/child_block_text"/>
+
+            <TextView
+                android:id="@+id/nText2"
+                android:layout_marginEnd="2dp"
+                android:layout_weight="1"
+                android:text=""
+                android:background="#5E5E5E"
+                style="@style/child_block_text"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/block_text"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                android:id="@+id/eText"
+                android:layout_marginEnd="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="E"
+                android:background="#8F8F8F"
+                style="@style/child_block_text"/>
+
+            <TextView
+                android:id="@+id/eText2"
+                android:layout_marginEnd="2dp"
+                android:layout_weight="1"
+                android:text=""
+                android:background="#5E5E5E"
+                style="@style/child_block_text"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/block_text"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                android:id="@+id/hText"
+                android:layout_marginEnd="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:text="H"
+                android:background="#8F8F8F"
+                style="@style/left_block_text"/>
+
+            <TextView
+                android:id="@+id/hText2"
+                android:layout_marginEnd="2dp"
+                android:layout_weight="1"
+                android:text=""
+                android:background="#5E5E5E"
+                style="@style/right_block_text"/>
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addResPointBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:visibility="gone"
+            android:text="Добавить в базу" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/calcNotchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/mainNotchLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/calcNotchBtn"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:text="Вычислить" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

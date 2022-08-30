@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.points.DatabaseActivity">
+
+    <include
+        android:id="@+id/include9"
+        layout="@layout/top_panel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/topPanelDatabaseLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include9">
+
+        <TextView
+            android:id="@+id/formatText"
+            style="@style/info_text"
+            android:text="@string/str_database_activity_format_info_text" />
+
+        <LinearLayout style="@style/block_text"
+            android:layout_marginTop="2dp">
+
+            <Spinner
+                android:id="@+id/formatSpinner"
+                style="@style/child_block_text" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pointsListText"
+            android:layout_marginTop="5dp"
+            style="@style/info_text"
+            android:text="@string/str_database_activity_list_info_text" />
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/pointsTableDatabaseHorizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5sp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomPanelDatabaseLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topPanelDatabaseLayout">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/headerDatabaseLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#5E5E5E"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/headerDatabaseCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/pointsDatabaseRecyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottomPanelDatabaseLayout"
+        style="@style/horizontal_block"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pointsTableDatabaseHorizontalScrollView">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addPointDatabaseBtn"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/str_database_activity_add_btn_text" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/deletePointDatabaseBtn"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:text="@string/str_database_activity_delete_btn_text"
+            android:visibility="gone" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cancelPointDatabaseBtn"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/str_database_activity_cancel_btn_text"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

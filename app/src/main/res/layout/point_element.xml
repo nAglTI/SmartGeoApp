@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainPointElementLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="start|center"
+    android:orientation="horizontal"
+    android:scrollbars="none"
+    style="@style/table_element"
+    tools:context=".adapters.elements.PointElement">
+
+    <CheckBox
+        android:id="@+id/selectPointElementCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/namePointElementText"
+        style="@style/cell"
+        android:text="@string/str_database_activity_name_cell_text" />
+
+    <TextView
+        android:id="@+id/firstCoordinatePointElementText"
+        style="@style/cell"
+        android:text="N" />
+
+    <TextView
+        android:id="@+id/secondCoordinatePointElementText"
+        style="@style/cell"
+        android:text="E" />
+
+    <TextView
+        android:id="@+id/thirdCoordinatePointElementText"
+        style="@style/cell"
+        android:text="H" />
+
+    <TextView
+        android:id="@+id/datePointElementText"
+        style="@style/cell"
+        android:text="@string/str_database_activity_date_cell_text" />
+
+</LinearLayout>
+
+

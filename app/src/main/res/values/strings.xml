@@ -1,0 +1,173 @@
+<resources>
+    <string name="app_name" translatable="false">SmartGeoApp</string>
+    <string name="action" translatable="false">action</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="map_scale" translatable="false">1:%s</string>
+
+    <!--
+    Экран: Главное меню
+    -->
+    <string name="str_main_activity_title_text">SmartGeoApp: Main Menu</string>
+    <string name="str_main_activity_coord_system_btn_text">Coordinate Systems</string>
+    <string name="str_main_activity_points_database_btn_text">Points Database</string>
+    <string name="str_main_activity_map_btn_text">Map</string>
+    <string name="str_main_activity_task_btn_text">Tasks</string>
+    <string name="str_main_activity_settings_btn_text">Settings</string>
+    <string name="str_main_activity_about_btn_text">About</string>
+
+    <!--
+    Экран: Системы координат
+    -->
+    <string name="str_coord_system_activity_title">Coordinate Systems</string>
+    <string name="str_coord_system_activity_search_hint_text">Search</string>
+    <string name="str_coord_system_activity_list_info_text">List of coordinate systems</string>
+    <string name="str_coord_system_activity_type_info_text">Selection of coordinate system type</string>
+    <string-array name="system_types">
+        <item>Geodetic</item>
+        <item>Cartographic</item>
+    </string-array>
+
+    <!--
+    Экран: База точек
+    -->
+    <string name="str_database_activity_title">Points Database</string>
+    <string name="str_database_activity_add_btn_text">Add point</string>
+    <string name="str_database_activity_delete_btn_text">Delete</string>
+    <string name="str_database_activity_cancel_btn_text">Cancel</string>
+    <string name="str_database_activity_name_cell_text">Name</string>
+    <string name="str_database_activity_date_cell_text">Date of creation</string>
+    <string name="str_database_activity_list_info_text">List of points</string>
+    <string name="str_database_activity_format_info_text">Selection of coordinate format</string>
+    <string name="str_database_activity_delete_points_message">Number of selected points: %1$d.\nDelete selected points?</string>
+    <string name="str_database_activity_delete_alert_text">Points deleted successfully!</string>
+
+    <!--
+    Экран: Создание/редактирование точки
+    -->
+    <string name="str_create_point_activity_title">Point creation</string>
+    <string name="str_create_point_activity_info_text">Information about the point</string>
+    <string name="str_create_point_activity_point_name_text">Point name</string>
+    <string name="str_create_point_activity_format_type_text">Selection of coordinate format type</string>
+    <string name="str_create_point_activity_coord_values_text">Coordinate values</string>
+    <string name="str_create_point_activity_save_text">Save</string>
+    <string-array name="format_types">
+        <item>XYZ - geocentric format</item>
+        <item>BLH - in decimal degrees</item>
+    </string-array>
+    <string name="str_create_point_activity_name_alert_text">Please enter a point name!</string>
+    <string name="str_create_point_activity_coords_alert_text">Please enter valid coordinate values!</string>
+    <string name="str_create_point_activity_create_alert_text">Point created successfully!</string>
+
+    <string name="str_point_activity_title">Point: %s</string>
+    <string name="str_point_activity_date_text">Date of creation: %s</string>
+    <string name="str_create_point_activity_update_alert_text">Point updated successfully!</string>
+    <string name="str_create_point_activity_delete_alert_text">Point deleted successfully!</string>
+    <string name="str_point_activity_delete_alert_title">Attention!</string>
+    <string name="str_point_activity_delete_alert_message">Delete the current point?</string>
+
+    <!--
+    Экран: Карта
+    -->
+    <string name="str_map_activity_title">Map</string>
+
+    <!--
+    Экран: Задачи
+    -->
+    <string name="str_tasks_activity_title_text">Tasks</string>
+    <string name="str_tasks_activity_convert_coord_task_text">Point conversion between\ncoordinate systems</string>
+    <string name="str_tasks_activity_convert_inverse_problem_task_text">Inverse geodetic problem</string>
+    <string name="str_tasks_activity_convert_direct_problem_text">Direct geodetic problem</string>
+    <string name="str_tasks_activity_convert_notch_task_text">Direct notch</string>
+    <string name="str_tasks_activity_convert_area_task_text">Area</string>
+    <string name="str_tasks_activity_convert_length_task_text">Length</string>
+
+    <!--
+    Экран: Задачи -> Конвертация точки
+    -->
+    <string name="str_convert_task_activity_title_text">Point conversion</string>
+
+
+    <string name="str_main_help" translatable="false">
+        В главном меню вы можете перейти во вкладки:&lt;br/>
+        &lt;b>Системы координат&lt;/b> - показывает библиотеку доступных систем координат разных типов.&lt;br/>
+        &lt;b>База точек&lt;/b> - отображает добавленные пользователем в базу данных приложения точки в системе координат WGS 84.&lt;br/>
+        &lt;b>Карта&lt;/b> - позволяет открыть карту с отображением точек добавленных в базу данных.&lt;br/>
+        &lt;b>Задачи&lt;/b> - при переходе на эту вкладку, отображается окно со списком различных геодезических задач.&lt;br/>
+    </string>
+
+    <string name="str_coord_systems_help" translatable="false">
+        Данное меню представляет из себя бибилотеку доступных систем координат, которые можно использовать при решении геодезических задач (см. &lt;b>Задачи&lt;/b>).&lt;br/>
+        Системы координат представленны в двух &lt;b>типах&lt;/b>:&lt;br/>
+        &lt;b>Геодезические&lt;/b> - используют координаты в формате широты, долготы и высоты (BLH). В списке представленны самые используемые в России системы;&lt;br/>
+        &lt;b>Картографические&lt;/b> - это местные системы координат, которые используют формат координат север, восток, высота (NEH).
+        В списке представленны почти все местные системы, используемые в разных регионах России.&lt;br/>
+        На этом экране также имеется строка поиска, которая может помочь удостовериться, что в данной библиотеке имеется нужная система координат.
+        Однако, с помощью поиска также можно быстро найти и выбрать нужную систему координат для решения геодезической задачи.
+    </string>
+
+    <string name="str_database_help" translatable="false">
+        Данное меню показывает базу данных точек, которые были созданы в приложении.&lt;br/>
+        База точек может хранить координаты только в системе координат &lt;b>WGS 84&lt;/b>, так как она наиболее популярна в мире и
+        является &lt;b>основополагающей&lt;/b> при конвертации координат в другие системы.&lt;br/>
+        База данных может отображать точки в двух форматах:&lt;br/>
+        &lt;b>Геоцентрический (XYZ)&lt;/b> - данный формат очень часто используют спутники глобальной навигационной спутниковой системы, которые посылают на
+        геодезические приёмники координаты именно в этом формате.&lt;br/>
+        &lt;b>Геодезический (BLH в десятичных градусах)&lt;/b> - данный формат также часто используется, только уже при использовании карт или
+        различных сайтов кадастрового учета.&lt;br/>
+        Для добавления новой точки в базу данных нужно нажать кнопку \"&lt;b>Добавить&lt;/b>\", которая откроет окно для создания точки.&lt;br/>
+        Для перехода к параметрам уже созданной точки необходимо найти нужную точку в таблице и кликнуть по ней. После этого откроется меню с параметрами выбранной точки.&lt;br/>
+        Для удаления ненужных точек необходимо зажать и удерживать любой элемент таблицы в течении нескольких секунд. При помощи появившихся кнопок в левой части таблицы
+        выбрать точки для удаления и нажать на кнопку \"&lt;b>Удалить&lt;/b>\". Для отмены операции выбора нужно нажать на кнопку \"&lt;b>Отмена&lt;/b>\"
+    </string>
+
+    <string name="str_create_point_help" translatable="false">
+        В данном меню выполняется &lt;b>создание&lt;/b> новой точки, которой необходимо задать формат координат, а также численные значения координат в выбранном формате.&lt;br/>
+        Чтобы сохранить точку - нажмите кнопку \"&lt;b>Сохранить&lt;/b>\"
+    </string>
+
+    <string name="str_selected_point_help" translatable="false">
+        В данном меню выполняется &lt;b>редактирование&lt;/b> таких параметров точки как: имя, формат, значения координат.&lt;br/>
+        Для удаления точки из базы - нажмите кнопку \"&lt;b>Удалить&lt;/b>\".&lt;br/>
+        Для сохранения внесённых изменений в базу - нажмите кнопку \"&lt;b>Сохранить&lt;/b>\".
+    </string>
+
+    <string name="str_map_help" translatable="false">
+        В данном меню можно наблюдать местоположение точек из базы данных на карте.
+    </string>
+
+    <string name="str_tasks_help" translatable="false">
+        В данном меню можно выбрать необходимую для выполнения &lt;b>геодезическую задачу&lt;/b>.
+    </string>
+
+    <string name="str_point_conversion_help" translatable="false">
+        В данном меню выполняется &lt;b>конвертация&lt;/b> координат из одной системы в другую.&lt;br/>
+        Для получения результирующей точки необходимо: выбрать систему координат исходной точки, ввести значения координат исходной точки (или выбрать точку из базы данных),
+        выбрать систему координат результирующей точки и нажать на кнопку \"&lt;b>Произвести вычисление&lt;/b>\".&lt;br/>
+        Полученную точку можно добавить в базу, однако если исходная точка была выбрана из базы, то добавленная будет ей соответствовать, так как база данных хранит точки
+        в исходной системе координат WGS 84.
+    </string>
+
+    <string name="str_inverse_help" translatable="false">
+        В данном меню решается обратная геодезическая задача.&lt;br/>
+        Для получения результата вычислений необходимо: выбрать исходную систему координат, добавить две точки из базы данных и нажать на кнопку \"&lt;b>Вычислить&lt;/b>\".
+    </string>
+
+    <string name="str_direct_help" translatable="false">
+        В данном меню решается прямая геодезическая задача. Прямая геодезическая задача заключается в том, что по известным координатам точки А,
+        вычисляют координаты точки В, для чего необходимо знать горизонтальное проложение (длину) линии между этими точками и
+        дирекционный угол этой линии.&lt;br/>
+        Для получения результата вычислений необходимо выбрать исходную систему координат, добавить точку из базы данных, ввести горизонтальное положение, дирекционный угол
+        и нажать на кнопку \"&lt;b>Вычислить&lt;/b>\".&lt;br/>
+        Полученную точку можно добавить в базу данных нажав на кнопку \"&lt;b>Добавить в базу&lt;/b>\".
+    </string>
+
+    <string name="str_notch_help" translatable="false">
+        В данном меню решается прямая угловая засечка. Прямая угловая геодезическая засечка заключается в том,
+        чтобы по известным координатам двух точек (точек А и В) и измеренных при них углов α и β вычислить координаты третьей точки.&lt;br/>
+        Для получения результирующей точки необходимо: выбрать исходную систему координат, две точки из базы данных, ввести угол точки A и точки B.
+        Далее нажать на кнопку \"&lt;b>Вычислить&lt;/b>\".&lt;br/>
+        Полученную точку можно добавить в базу данных нажав на кнопку \"&lt;b>Добавить в базу&lt;/b>\".
+    </string>
+
+</resources>

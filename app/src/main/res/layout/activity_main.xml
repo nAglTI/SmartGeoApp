@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <include
+        android:id="@+id/includePanel"
+        layout="@layout/top_panel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/mainCardsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/includePanel"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/coordSystemBtn"
+            android:layout_marginTop="10sp"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:layout_width="match_parent"
+            app:icon="@drawable/ic_coord_system"
+            android:text="@string/str_main_activity_coord_system_btn_text"
+            android:backgroundTint="#5E5E5E"
+            android:textColor="@color/white"
+            android:layout_height="80dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pointsDatabaseBtn"
+            android:layout_marginTop="10sp"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:layout_width="match_parent"
+            app:icon="@drawable/ic_database"
+            android:text="@string/str_main_activity_points_database_btn_text"
+            android:backgroundTint="#5E5E5E"
+            android:textColor="@color/white"
+            android:layout_height="80dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mapBtn"
+            android:layout_marginTop="10sp"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:layout_width="match_parent"
+            app:icon="@drawable/ic_map"
+            android:text="@string/str_main_activity_map_btn_text"
+            android:backgroundTint="#5E5E5E"
+            android:textColor="@color/white"
+            android:layout_height="80dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/taskBtn"
+            android:layout_marginTop="10sp"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:layout_width="match_parent"
+            app:icon="@drawable/ic_task"
+            android:text="@string/str_main_activity_task_btn_text"
+            android:backgroundTint="#5E5E5E"
+            android:textColor="@color/white"
+            android:layout_height="80dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondCardsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10sp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/settingsBtn"-->
+<!--            android:layout_marginTop="10sp"-->
+<!--            android:layout_marginStart="10sp"-->
+<!--            android:layout_marginEnd="15sp"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_weight="1"-->
+<!--            app:icon="@drawable/ic_settings"-->
+<!--            android:text="@string/str_main_activity_settings_btn_text"-->
+<!--            android:backgroundTint="#5E5E5E"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:layout_height="80dp"/>-->
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/aboutAppBtn"-->
+<!--            android:layout_marginTop="10sp"-->
+<!--            android:layout_marginEnd="10sp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_width="0dp"-->
+<!--            app:icon="@drawable/ic_about"-->
+<!--            android:text="@string/str_main_activity_about_btn_text"-->
+<!--            android:backgroundTint="#5E5E5E"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:layout_height="80dp"/>-->
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+
+    <!--
+    Экран: Главное меню
+    -->
+    <string name="str_main_activity_title_text">SmartGeoApp</string>
+    <string name="str_main_activity_coord_system_btn_text">Системы координат</string>
+    <string name="str_main_activity_points_database_btn_text">База точек</string>
+    <string name="str_main_activity_map_btn_text">Карта</string>
+    <string name="str_main_activity_task_btn_text">Задачи</string>
+    <string name="str_main_activity_settings_btn_text">Настройки</string>
+    <string name="str_main_activity_about_btn_text">Инфо</string>
+
+    <!--
+    Экран: Системы координат
+    -->
+    <string name="str_coord_system_activity_title">Системы координат</string>
+    <string name="str_coord_system_activity_search_hint_text">Поиск</string>
+    <string name="str_coord_system_activity_list_info_text">Список систем координат</string>
+    <string name="str_coord_system_activity_type_info_text">Выбор типа систем координат</string>
+    <string-array name="system_types">
+        <item>Геодезическая</item>
+        <item>Картографическая</item>
+    </string-array>
+
+    <!--
+    Экран: База точек
+    -->
+    <string name="str_database_activity_title">База точек</string>
+    <string name="str_database_activity_add_btn_text">Добавить</string>
+    <string name="str_database_activity_delete_btn_text">Удалить</string>
+    <string name="str_database_activity_cancel_btn_text">Отмена</string>
+
+    <string name="str_database_activity_name_cell_text">Название</string>
+    <string name="str_database_activity_date_cell_text">Дата создания</string>
+    <string name="str_database_activity_list_info_text">Список точек</string>
+    <string name="str_database_activity_format_info_text">Выбор формата координат</string>
+    <string name="str_database_activity_delete_points_message">Количество выбранных точек: %1$d.\nУдалить выбранные точки?</string>
+    <string name="str_database_activity_delete_alert_text">Точки успешно удалены!</string>
+
+    <!--
+    Экран: Создание/редактирование точки
+    -->
+    <string name="str_create_point_activity_title">Создание точки</string>
+    <string name="str_create_point_activity_info_text">Основная информация о точке</string>
+    <string name="str_create_point_activity_point_name_text">Название точки</string>
+    <string name="str_create_point_activity_format_type_text">Выбор типа формата координат</string>
+    <string name="str_create_point_activity_coord_values_text">Значения координат</string>
+    <string name="str_create_point_activity_save_text">Сохранить</string>
+    <string name="str_create_point_activity_name_alert_text">Пожалуйста, введите имя точки!</string>
+    <string name="str_create_point_activity_coords_alert_text">Пожалуйста, введите правильные значения координат!</string>
+    <string name="str_create_point_activity_create_alert_text">Точка была создана успешно!</string>
+    <string-array name="format_types">
+        <item>XYZ - геоцентрический формат</item>
+        <item>BLH - в десятичных градусах</item>
+    </string-array>
+
+    <string name="str_point_activity_title">Точка: %s</string>
+    <string name="str_point_activity_date_text">Дата создания: %s</string>
+    <string name="str_create_point_activity_update_alert_text">Точка была успешно обновлена!</string>
+    <string name="str_create_point_activity_delete_alert_text">Точка была успешно удалена!</string>
+    <string name="str_point_activity_delete_alert_title">Внимание!</string>
+    <string name="str_point_activity_delete_alert_message">Вы действительно хотите удалить текущую точку?</string>
+
+    <!--
+    Экран: Карта
+    -->
+    <string name="str_map_activity_title">Карта</string>
+
+    <!--
+    Экран: Задачи
+    -->
+    <string name="str_tasks_activity_title_text">Задачи</string>
+    <string name="str_tasks_activity_convert_coord_task_text">Конвертация точки между\nсистемами координат</string>
+    <string name="str_tasks_activity_convert_inverse_problem_task_text">Обратная геодезическая задача (ОГЗ)</string>
+    <string name="str_tasks_activity_convert_direct_problem_text">Прямая геодезическая задача (ПГЗ)</string>
+    <string name="str_tasks_activity_convert_notch_task_text">Прямая угловая засечка</string>
+    <string name="str_tasks_activity_convert_area_task_text">Площадь</string>
+    <string name="str_tasks_activity_convert_length_task_text">Длина</string>
+
+    <!--
+    Экран: Задачи -> Конвертация точки
+    -->
+    <string name="str_convert_task_activity_title_text">Конвертация точки</string>
+</resources>
